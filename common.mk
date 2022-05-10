@@ -30,6 +30,13 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio@4.0-service \
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -163,6 +170,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     liba2dpoffload \
     com.dsi.ant@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -370,6 +378,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
     netutils-wrapper-1.0
 
 # NeuralNetworks
@@ -431,12 +440,11 @@ PRODUCT_ODM_PROPERTIES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0 \
-    libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
