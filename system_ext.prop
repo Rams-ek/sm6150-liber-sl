@@ -1,0 +1,10 @@
+# Bluetooth
+ PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.bt.a2dp.aac_whitelist=false 
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml 
+
+#graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.demo.hdmirotationlock=false 
