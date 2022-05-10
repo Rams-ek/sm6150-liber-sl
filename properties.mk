@@ -94,7 +94,6 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
     persist.vendor.qcom.bluetooth.soc=cherokee \
@@ -166,7 +165,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
-    persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_saturation=1.0 \
     persist.sys.sf.native_mode=1 \
     persist.sys.sf.force_brightness_capability=1 \
@@ -191,7 +189,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     debug.stagefright.ccodec=1 \
     debug.stagefright.omx_default_rank=0 \
     persist.vendor.media.recorder.bt709=true
